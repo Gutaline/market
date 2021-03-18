@@ -1,0 +1,600 @@
+:root {
+
+	--color-white:#ffff;
+	--color-green:#3cc395;
+	--color-grey: #f5f5f5;
+}
+
+
+
+* {
+
+	 box-sizing: border-box;
+}
+
+ul {
+	padding-left: 0;
+	margin: 50px 0px 0px 0px;
+}
+li {
+	list-style: none;
+}
+
+
+td {
+  font-family: 'Bebas Neue';  
+  font-size: 20px;
+  
+  padding-right: 20px;
+   
+}
+
+div {
+  margin: 0;
+}
+
+
+body {
+
+	margin:0;
+	padding:0;
+	line-height: 1.7;
+  font-family: 'Bebas Neue'; 
+	
+}
+.delete-product {
+  position: relative;
+  padding-right: 35px;
+}
+
+.delete-product::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  transform: rotate(45deg);
+}
+
+.delete-product::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  transform: rotate(-45deg);
+}
+
+
+
+.title-cartProducts {
+ 
+  padding: 0 43px;
+  font-size: 44px; 
+  display: inline-block;
+  position: relative;
+
+}
+
+.exit-openCart {
+   display: inline-block;
+   width: 40px;
+   height: 15px;
+   margin-left: 10px;
+   position: relative;
+
+}
+
+.exit-openCart::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.exit-openCart::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(-45deg);
+}
+
+.shopping3 {
+  width: 300px;
+}
+
+.summa {
+  font-family: 'Bebas Neue';  
+  font-size: 20px;
+  padding-left: 43px;
+}
+
+.container{
+	max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-openShop {
+    min-width: 400px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffff;
+    border: 2px solid #3cc395;
+    position: fixed;
+    height: 101vh;
+    top: 0;
+    right: 0px;
+    overflow: auto;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.basket a {
+	color: black;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	font-family: 'Bebas Neue';  
+ }
+
+ .fixcontainer {
+ 	max-width: 800px;
+ 	margin: 0 auto;
+
+ }
+.container2 {
+	max-width: 800px;
+ 	margin: 0 auto;
+}
+
+
+
+/* Флекс,который выравнивает логотип,поиск и корзину*/
+.inner {
+ display: flex;
+ justify-content: space-between;
+ max-width: 1024px;
+ margin: 0 auto;
+ padding:  20px 20px;
+ align-items: center;
+}
+
+.logo{
+   font-family: 'Lobster', cursive;
+  font-size: 49px;
+  line-height: 1;
+  color:#3cc3b5;
+}
+
+
+.search{
+ 
+  border: 2px solid #f5f5f5;
+  border-radius: 4px;
+  height: 30px;
+  display:flex;
+
+
+}
+
+.header__search-input-wrapp {
+	width: 278px;
+	display: flex;
+	border-right: 2px solid #f5f5f5;
+	align-items: center;
+}
+
+.header__search-dropdown {
+  border-right: 2px solid #f5f5f5;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+    border:none;
+	font-size:14px;
+	font-weight: 400;
+	width: 100%;
+	height: 26px;
+	padding: 0px 20px;
+
+}
+
+.select__title {
+ color: #b3b3b3;
+ position: relative;
+
+
+}
+
+.header__select {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+ .header__select::after {
+ 	content:"";
+ 	width: 10px;
+	position: absolute;
+    height: 10px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-70%);
+    background-image: url("./../img/arrow.svg");
+    background-repeat: no-repeat;
+ }
+
+
+
+.select__dropdown {
+ 
+   position:absolute;
+   top:10%;
+   left: 0;
+   color: #b3b3b3;
+   top:100%;
+   left: -2px;
+   right: -2px;
+   border: 2px solid #f5f5f5;
+   border-radius: 0 0 6% 6%;
+   z-index: 3;
+}
+.hamburger {
+	display: none;
+}
+.hidden{
+  
+	  display: none;
+}
+
+.dropdown__item {
+    padding-left: 22px;
+    border-bottom: 2px solid #f5f5f5;
+    background-color: white;
+}
+.dropdown__item:hover {
+
+	 background-color: #d7f1ed;
+}
+.dropdown__item:last-child {
+    	border-bottom:none;
+  }
+.button {
+  background-color: transparent;
+  border:none; 
+}
+
+/* Выше конец поля с поисковиком*/
+
+/* Корзина*/
+.basket{
+	
+	display: flex;
+	align-items: center;
+}
+.text__basket {
+	font-size: 30px;
+	
+	padding-left: 5px;
+
+}
+
+.icon__basket{
+	padding-left: 20px;
+}
+
+.fff {
+  width: 160px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+
+}
+
+.blackGround {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.name-product::before {
+  content:"Name";
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.price-product::before {
+  content:"Price";
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.cartProducts {
+   margin:0 auto;
+}
+/* конец Корзины*/
+
+
+/* То что выше , нужно для js , теперь будем писать чисто на css и htm */
+/* Панель меню*/
+.header__bottom {
+    width: 100%;
+    background-color: #4ccfc1;
+    box-shadow: 0 2px 5px 0px black;
+    color: red;
+}
+
+ul.menu {
+	display: flex;
+	justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+}
+.menu li {
+
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  transition: color .5s linear;
+}
+
+.menu li + li::before {
+	content: "";
+	border-left: 1px solid white;	
+	padding-left: 20px;
+	
+}
+
+
+/* конец Панели меню*/
+
+/* Первый слайдер*/
+
+.slider__inner {
+	margin-left: 20px;
+}
+
+.slider-section {
+	background-color: #3ebfb5;
+    padding-top: 10px;
+    min-height: 380px;
+}
+
+.slider__item-1 {
+	/*background-image: url("../img/Tshirt.png");*/
+    background-repeat: no-repeat;
+	display: flex !important;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	
+}
+
+.obertka {
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+
+.slider__text {
+  color: white;
+  width:310px; 
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+.slider__title {
+	font-size: 61px;
+     color: white; 
+	line-height: 0.9;
+	margin: 10px 0 0 0;
+
+
+}
+
+
+.shop__nowbtn {
+	border:1px solid white;
+	padding: 10px 17px;
+	margin: 0px;
+	margin-bottom: 50px;
+	color: white;
+}
+
+.slider__item-2 {
+	/*background-image: url("../img/Tshirt.png");*/
+    background-repeat: no-repeat;
+	display: flex !important;
+	flex-wrap: wrap;
+	min-width: 20px;
+
+}
+
+/* Конец первого слайдера*/
+
+/*Настройки точек и стрелок для первого слайдера*/
+
+.slick-dots {
+	margin:0;
+}
+
+.slider .slick-arrow{
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   z-index: 5;
+   font-size: 0;
+   width: 30px;
+   height: 100px;
+}
+
+.slider .slick-arrow.slick-prev{
+	left:-50px;
+	background:url("../img/arrow_left.png") 0 0  no-repeat;
+	border:none; 
+	padding: 0;
+
+}
+
+.slider .slick-arrow.slick-next{
+	right:-50px;
+	background:url("../img/arrow_right.png") 0 0  no-repeat;
+    border:none; 
+    padding: 0;
+}
+
+.slick-slide:focus{
+	outline:none;
+}
+.slick-arrow.slick-prev:focus {
+	outline:none;
+}
+.slick-arrow.slick-next:focus {
+	outline:none;
+}
+.slider__inner .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.slider__inner .slick-dots li {
+  margin: 0 10px;
+}
+
+.slider__inner .slick-dots button {
+   font-size: 0;
+   width: 8px;
+   height: 10px;
+   border-radius:50%;
+   background-color: #fff;
+   border:none;
+   outline:none;
+   position: absolute;
+  
+   
+
+}
+
+.slider__inner .slick-dots li.slick-active button {
+  background-color: grey;
+}
+/* конец Настройки точек и стрелок для первого слайдера*/
+
+/* второй слайдер*/
+
+
+.product_slider {
+	
+    font-size: 25px;
+    color:#b4b4b4;
+}
+
+.shop {
+  width: 55px;
+  background-color: #3cc395;
+  text-align: center;
+  padding: 8px 0;
+  color: white;
+  border-radius: 10%;
+
+}
+
+.left {
+		float: left;
+}
+
+.bottom_product_slider {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	
+
+}
+
+
+	
+
+.product__item_slider {
+
+ border-right: 1px solid #afafaf;
+ padding-bottom: 10px;
+
+}
+
+.slider-section_2 {
+	margin: 0;
+}
+
+/* конец Настройки второго слайдера*/
+
+/*featured__products*/
+
+.wrapper_products {
+    background-color: #37c8b1;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.featured__products {
+	margin-left: 50px;
+	color: white;
+}
+
+/*///////featured__products*/
+
+/* Подвал*/
+
+footer {
+	background-color: #3cc3b5;
+}
+
+
+div.column {
+	display: flex;
+	justify-content: space-between;
+	min-width: 200px;
+	
+}
+
+div.column ul li{
+	color: white;
+	font-size: 16px;
+}
+
+div.column ul li:first-child {
+	font-size: 25px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+
+
+

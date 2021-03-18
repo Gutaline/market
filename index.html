@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+
+
+  <link rel="stylesheet" href="components/Header/Header.css">
+  <link rel="stylesheet" href="components/Products/Products.css">
+  <link rel="stylesheet" href="components/Shopping/Shopping.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container">
+        <div id="header">
+          <div class="header__top">
+            <div class="inner">
+              <div class="logo">Aditii</div>
+              <!-- Поле поиска -->
+              <form class="search">
+                <div class="header__search-input-wrapp">
+                  <input class="search-input" type="text" placeholder="Search goods">
+                </div>
+                <div class="header__search-dropdown">
+                  <div data-select class="header__select">
+                    <div data-title class="select__title">Category</div>
+                    <div class="select__dropdown hidden">
+                      <div data-item="Handbags" class="dropdown__item">Handbags</div>
+                      <div data-item="Wallets" class="dropdown__item">Wallets</div>
+                      <div data-item="Shoes" class="dropdown__item">Shoes</div>
+                      <div data-item="Vintage" class="dropdown__item">Vintage</div>
+                      <div data-item="Mens Store" class="dropdown__item">Mens Store</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__search-button">
+                  <button class="button" type="submit">
+                    <img src="img/search.png">
+                  </button>
+                </div>
+              </form>
+              <!-- конец Поля поиска -->
+
+              <!-- Корзина  -->
+              <div class="basket" onclick="shoppingPage.openShoppingPage();">
+                <a href="#">
+                  <span class="icon__basket"><img src="img/basket.png"></span>
+                  <span class="text__basket"></span>
+                </a>
+
+              </div>
+
+              <div class="hamburger">
+                <img src="./img/Hamburger2.png">
+             </div>
+            </div>
+
+            
+          
+          </div>
+        </div>
+      </div>
+
+  
+
+      
+
+
+    
+
+
+      <div class="header__bottom">
+        <div class="container">
+
+          <nav class="menu_nav">
+            <ul class="menu">
+              <li><a href="reference.html">Home </a></li>
+              <li><a href="reference.html">Sale</a></li>
+              <li><a href="reference.html">Handbags</a></li>
+              <li><a href="reference.html">Wallets</a></li>
+              <li><a href="reference.html">Accessories</a></li>
+              <li><a href="reference.html">Mens Store</a></li>
+              <li><a href="reference.html">Shoes</a></li>
+              <li><a href="reference.html">Vintage</a></li>
+              <li><a href="reference.html">Services</a></li>
+              <li><a href="reference.html">Contant us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- Слайдер 1-->
+    <section class="slider-section">
+      <div class="container">
+        <div class="slider__inner ">
+
+          <div class="slider__item-1">
+            <img src="./img/Tshirt.png" class="ttt">
+            <div class="obertka">
+              <h2 class="slider__title">cowhide <br> standart crew</h2>
+              <p class="slider__text">
+                White coloured,short-sleeved,printed T-shirt for men by Levi`s.This crew-neck T-shirt is made of organic
+                cotton and comes in a regular fit.
+              </p>
+              <div class="shop__now">
+                <a class="shop__nowbtn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="slider__item-2">
+            <img src="./img/Red.png" class="ttt">
+            <div class="obertka">
+              <h2 class="slider__title">cowhide <br> red crew</h2>
+              <p class="slider__text">
+                White coloured,short-sleeved,printed T-shirt for men by Levi`s.This crew-neck T-shirt is made of organic
+                cotton and comes in a regular fit.
+              </p>
+              <div class="shop__now">
+                <a class="shop__nowbtn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- конец Слайдера 1-->
+
+    <!-- Слайдер 2-->
+    <section class="slider-section_2">
+      <div class="fixcontainer">
+        <div class="slider__inner-2  slider">
+          <div class="product__item_slider">
+            <img class="left" src="./img/seven.png">
+            <div class="bottom_product_slider">
+              <div class="product_slider">branded<br>shoes</div>
+              <div class="shop">shop</div>
+            </div>
+          </div>
+          <div class="product__item_slider">
+            <img class="left" src="./img/two.png">
+            <div class="bottom_product_slider">
+              <div class="product_slider">branded <br> shoes</div>
+              <div class="shop">shop</div>
+            </div>
+          </div>
+
+          <div class="product__item_slider">
+            <img class="left" src="./img/six.png">
+            <div class="bottom_product_slider">
+              <div class="product_slider">branded <br> shoes</div>
+              <div class="shop">shop</div>
+            </div>
+          </div>
+
+          <div class="product__item_slider">
+            <img class="left" src="./img/nine.png">
+            <div class="bottom_product_slider">
+              <div class="product_slider">branded <br> shoes</div>
+              <div class="shop">shop</div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- конец Слайдера 2-->
+
+    <!-- featured products -->
+
+    <div class="wrapper_products">
+      <div class="container">
+        <div class="featured__products">
+          featured products
+        </div>
+      </div>
+    </div>
+
+    <!-- //////featured products -->
+
+    <!-- Основные продукты -->
+
+
+    <div class="container">
+      <div id="products"></div>
+    </div>
+
+
+    <!-- Подвал  -->
+    <footer>
+      <div class="container2">
+        <div class="column">
+          <ul class="column1">
+            <li>fEATURED SALE</li>
+            <li>Alexis Hudson</li>
+            <li>American Apparel</li>
+            <li>Ben Sherman</li>
+            <li>Big Buddha</li>
+            <li>Chanel</li>
+            <li>Christian Audigier</li>
+            <li>Coach</li>
+            <li>Cole Haan</li>
+
+          </ul>
+
+          <ul class="column2">
+            <li>MENS STORE</li>
+            <li>Alexis Hudson</li>
+            <li>American Apparel</li>
+            <li>Ben Sherman</li>
+            <li>Big Buddha</li>
+            <li>Chanel</li>
+            <li>Christian Audigier</li>
+            <li>Coach</li>
+            <li>Cole Haan</li>
+          </ul>
+
+          <ul class="column3">
+            <li>WOMEN STORE</li>
+            <li>Alexis Hudson</li>
+            <li>American Apparel</li>
+            <li>Ben Sherman</li>
+            <li>Big Buddha</li>
+            <li>Chanel</li>
+            <li>Christian Audigier</li>
+            <li>Coach</li>
+            <li>Cole Haan</li>
+          </ul>
+
+          <ul class="column4">
+            <li>QUICK LINKS</li>
+            <li>Alexis Hudson</li>
+            <li>American Apparel</li>
+            <li>Ben Sherman</li>
+            <li>Big Buddha</li>
+            <li>Chanel</li>
+            <li>Christian Audigier</li>
+            <li>Coach</li>
+            <li>Cole Haan</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div id="shopping" class="shopping3"></div>
+
+
+
+
+    <!-- Constants and Utils   -->
+    <script src="util/jquery-3.5.1.min.js"> </script>
+    <script src="./js/slick.min.js"> </script>
+    <script src="./util/catalog.js"></script>
+    <script src="./util/root.js"></script>
+    <script src="util/localStorage.js"></script>
+
+    <script src="./util/header33.js"></script>
+    <script src="./util/Products.js"></script>
+    <script src="./util/Shopping.js"></script>
+
+    <script src="./js/search.js"></script>
+</body>
+
+</html>
