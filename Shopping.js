@@ -1,9 +1,10 @@
 let basketPrice1 = Number(basket.textContent); 
-
+let body = document.querySelector(".body");
 class Shopping {
 
 	closeShoppingPage () {
 		ROOT_SHOPPING.innerHTML = '';
+		body.classList.remove("stopScroll");
 	}
 
 	deleteEl(idi,price) {
@@ -37,6 +38,7 @@ class Shopping {
 
 	openShoppingPage() {
 		shoppingPage.render();
+		body.classList.add("stopScroll");
 	}
 
 	render() {
