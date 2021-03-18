@@ -136,6 +136,11 @@
   .slider-section_2 .slick-track { 
     padding-left: 50px;
   }
+    
+  table {
+     margin: 0;
+     margin-left: 33px;
+  }
 
   .name-product {
     display: none;
